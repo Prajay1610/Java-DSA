@@ -2,7 +2,7 @@ package Sorting_arrays;
 
 public class Selection_Sort {
     public static void Selectionsort(int arr[]) {
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             int min_idx = i;
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < arr[min_idx]) {
@@ -24,7 +24,7 @@ public class Selection_Sort {
     }
 
     public static void main(String args[]) {
-        int arr[] = { 5, 4, 1, 3, 2 };
+        int arr[] = { 5, 4, 1, 3, 2, 89, 78 };
 
         Selectionsort(arr);
         printarray(arr);
